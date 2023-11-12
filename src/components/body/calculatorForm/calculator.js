@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './calculator.css';
+import Aux from '../../../hoc/Auxiliary/Auxiliary';
+
 
 const Calculator = () => {
   const [proteinFirstFood, setProteinFirstFood] = useState('');
@@ -39,16 +41,18 @@ const Calculator = () => {
         {result === 'מלא נכון את הטופס' ?
         <strong> {result}  </strong> :
         <strong> : כמות הגרם המותרת של המאכל השני הוא <br/> {result} </strong>
-        
+
         }
-      
+
     </div> :
     ''
     );
   }
 
-  return (
-    <form onSubmit={calculateAllowedGrams}>
+  const formDiv = () => {
+
+    return(
+      <form onSubmit={calculateAllowedGrams}>
       <div className="calculator-container">
         <h2>חישוב כמות אוכל חלופי</h2>
         <div>
@@ -94,9 +98,15 @@ const Calculator = () => {
         <button type="submit">לחץ כדי לחשב</button>
 
         {resultDiv()}
-        
       </div>
     </form>
+    )
+  }
+
+  return (
+    <Aux>
+    {formDiv()}
+    </Aux>
   );
 };
 

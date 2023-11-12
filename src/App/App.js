@@ -12,11 +12,10 @@ function App() {
         <Nav />
       </header>
 
-      <body>
+      <main>
         <Calculator />
-      </body>
-       
-      
+      </main>
+
     </React.Fragment>
   );
 }
