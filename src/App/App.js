@@ -1,11 +1,10 @@
 import React from 'react';
 import '../App/App.css';
-import Calculator from '../components/body/calculatorForm/calculator';
-import Nav from '../components/header/nav/nav';
+import ProteinCalculator from '../components/proteinCalculator/proteinCalculator';
+import Nav from '../components/nav/nav';
 import './App.css';
 
 function App() {
-  
   return (
     <React.Fragment>
       <header>
@@ -13,7 +12,7 @@ function App() {
       </header>
 
       <main>
-        <Calculator />
+        <ProteinCalculator />
       </main>
 
     </React.Fragment>

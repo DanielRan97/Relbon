@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './calculator.css';
-import Aux from '../../../hoc/Auxiliary/Auxiliary';
+import './proteinCalculator.css';
+import Aux from '../../hoc/Auxiliary/Auxiliary';
 
 
-const Calculator = () => {
+const ProteinCalculator = () => {
   const [proteinFirstFood, setProteinFirstFood] = useState('');
   const [caloriesFirstFood, setCaloriesFirstFood] = useState('');
   const [proteinSecondFood, setProteinSecondFood] = useState('');
@@ -110,4 +110,4 @@ const Calculator = () => {
   );
 };
 
-export default Calculator;
+export default ProteinCalculator;

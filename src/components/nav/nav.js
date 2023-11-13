@@ -1,6 +1,6 @@
 import React from 'react';
 import './nav.css';
-import Aux from '../../../hoc/Auxiliary/Auxiliary';
+import Aux from '../../hoc/Auxiliary/Auxiliary';
 import { FaDrumstickBite } from 'react-icons/fa';
 
 const Nav = () => {
